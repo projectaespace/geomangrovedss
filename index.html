@@ -201,6 +201,36 @@
       min-height: 640px;
     }
     
+    @media (max-width: 768px) {
+      .dashboard-hero {
+        min-height: 480px;
+      }
+    }
+    
+    @media (max-width: 600px) {
+      .dashboard-hero {
+        min-height: 420px;
+      }
+    }
+    
+    @media (max-width: 480px) {
+      .dashboard-hero {
+        min-height: 380px;
+      }
+    }
+    
+    @media (max-width: 390px) {
+      .dashboard-hero {
+        min-height: 350px;
+      }
+    }
+    
+    @media (max-width: 360px) {
+      .dashboard-hero {
+        min-height: 320px;
+      }
+    }
+    
     .dashboard-hero::before {
       content: '';
       position: absolute;
@@ -992,38 +1022,676 @@
       }
     }
     
+    @media (max-width: 1400px) {
+      .dashboard-hero {
+        padding: 54px 48px 54px;
+      }
+      
+      .hero-metrics {
+        gap: 20px;
+      }
+    }
+
+    @media (max-width: 1200px) {
+      .dashboard-hero {
+        padding: 44px 36px 44px;
+        min-height: 560px;
+      }
+      
+      .hero-metric-card {
+        min-width: 180px;
+      }
+      
+      .hero-title {
+        font-size: clamp(2rem, 3.5vw, 3.8rem);
+      }
+      
+      .about-description {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 16px;
+      }
+    }
+
+    @media (max-width: 1024px) {
+      .dashboard-hero {
+        padding: 32px 24px 28px;
+        min-height: auto;
+      }
+      
+      .hero-content {
+        max-width: 100%;
+      }
+      
+      .hero-title {
+        font-size: clamp(1.8rem, 3vw, 3.2rem);
+        margin-bottom: 16px;
+      }
+      
+      .hero-copy {
+        font-size: 1rem;
+      }
+      
+      .hero-buttons {
+        flex-direction: column;
+        gap: 10px;
+      }
+      
+      .dashboard-menu-wrapper {
+        flex: 1 1 100%;
+        min-width: 0;
+      }
+      
+      .dashboard-action-btn {
+        width: 100%;
+        min-width: auto;
+      }
+      
+      .hero-metrics {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 16px;
+        margin-top: 16px;
+      }
+      
+      .hero-metric-card {
+        min-height: auto;
+        padding: 16px;
+      }
+      
+      main {
+        padding: 0 20px;
+      }
+    }
+
+    @media (max-width: 992px) {
+      .dashboard-hero {
+        padding: 28px 20px 24px;
+      }
+      
+      .hero-title {
+        font-size: clamp(1.6rem, 2.5vw, 2.8rem);
+        margin-bottom: 14px;
+      }
+      
+      .hero-buttons {
+        gap: 8px;
+      }
+      
+      .hero-metrics {
+        grid-template-columns: 1fr;
+        gap: 12px;
+      }
+      
+      .about-description {
+        grid-template-columns: 1fr;
+      }
+      
+      .about-slider {
+        aspect-ratio: auto;
+        height: auto;
+        min-height: 300px;
+        max-height: 60vh;
+      }
+    }
+
     @media (max-width: 768px) {
+      header {
+        padding: 16px 20px;
+      }
+
       header .container {
         flex-direction: column;
         gap: 12px;
         align-items: flex-start;
       }
-
-      .about-page {
-        padding: 20px;
+      
+      .header-left {
+        width: 100%;
       }
-
-      .about-slider {
-        height: min(60vh, 360px);
-        min-height: 260px;
-      }
-
-      .about-description {
-        grid-template-columns: 1fr;
+      
+      .header-menu {
+        width: 100%;
+        justify-content: flex-start;
+        gap: 8px;
+        flex-wrap: wrap;
       }
       
       .header-right {
         width: 100%;
         justify-content: flex-start;
+        gap: 8px;
+      }
+
+      .header-title {
+        font-size: 1rem;
       }
       
-      .nav-item {
+      .header-subtitle {
+        font-size: 0.75rem;
+      }
+
+      .dashboard-hero {
+        padding: 24px 16px;
+        margin-bottom: 32px;
+        border-radius: 24px;
+      }
+
+      .about-page {
+        padding: 16px;
+        margin-bottom: 24px;
+      }
+
+      .about-slider {
+        height: auto;
+        min-height: 280px;
+        max-height: 50vh;
+        aspect-ratio: 16/10;
+      }
+
+      .about-description {
+        grid-template-columns: 1fr;
+        gap: 12px;
+      }
+
+      .about-card {
+        padding: 16px;
+        border-radius: 12px;
+      }
+
+      .about-card h3 {
+        font-size: 0.95rem;
+        margin-bottom: 8px;
+      }
+
+      .about-header h2 {
+        font-size: clamp(1.2rem, 4vw, 1.8rem);
+        margin-bottom: 12px;
+      }
+
+      .hero-title {
+        font-size: clamp(1.4rem, 5vw, 2.4rem);
+        margin-bottom: 12px;
+      }
+      
+      .hero-copy {
+        font-size: 0.9rem;
+        margin-bottom: 16px;
+      }
+      
+      .hero-buttons {
+        flex-direction: column;
+        gap: 8px;
+        margin-bottom: 16px;
+      }
+      
+      .dashboard-action-btn {
+        width: 100%;
+        min-width: auto;
         padding: 12px 16px;
         font-size: 0.85rem;
       }
       
+      .hero-metrics {
+        grid-template-columns: 1fr;
+        gap: 12px;
+        margin-top: 12px;
+      }
+      
+      .hero-metric-card {
+        padding: 14px;
+        min-height: auto;
+        background: linear-gradient(135deg, rgba(33, 105, 211, 0.15), rgba(12, 57, 130, 0.08));
+      }
+      
+      .hero-metric-label {
+        font-size: 0.7rem;
+        margin-bottom: 6px;
+      }
+      
+      .hero-metric-value {
+        font-size: 1.2rem;
+      }
+      
+      .hero-metric-note {
+        font-size: 0.75rem;
+        margin-top: 6px;
+      }
+      
+      .nav-item {
+        padding: 8px 12px;
+        font-size: 0.8rem;
+      }
+      
       main {
         padding: 0 16px;
+        margin: 16px auto;
+      }
+      
+      footer {
+        padding: 16px;
+        margin-top: 32px;
+        font-size: 0.8rem;
+      }
+    }
+
+    @media (max-width: 600px) {
+      header {
+        padding: 12px 16px;
+      }
+
+      .logo {
+        height: 40px;
+        width: 40px;
+        padding: 8px;
+      }
+
+      .header-title {
+        font-size: 0.9rem;
+      }
+      
+      .header-subtitle {
+        font-size: 0.7rem;
+        display: none;
+      }
+      
+      .header-menu {
+        width: 100%;
+        gap: 6px;
+      }
+      
+      .nav-item {
+        padding: 6px 10px;
+        font-size: 0.75rem;
+      }
+
+      .dashboard-hero {
+        padding: 16px 12px;
+        margin-bottom: 24px;
+        border-radius: 16px;
+      }
+
+      .hero-title-row {
+        gap: 12px;
+        margin-bottom: 12px;
+      }
+
+      .hero-badge {
+        padding: 6px 12px;
+        font-size: 0.75rem;
+      }
+
+      .hero-sublogo {
+        max-width: 240px;
+        height: auto;
+      }
+
+      .hero-title {
+        font-size: clamp(1.2rem, 4.5vw, 2rem);
+        margin-bottom: 8px;
+        line-height: 1.1;
+      }
+      
+      .hero-copy {
+        font-size: 0.85rem;
+        margin-bottom: 12px;
+        max-width: 100%;
+      }
+      
+      .hero-buttons {
+        gap: 6px;
+        margin-bottom: 12px;
+      }
+      
+      .dashboard-action-btn {
+        padding: 10px 12px;
+        font-size: 0.8rem;
+        gap: 6px;
+      }
+
+      .dashboard-action-btn i {
+        font-size: 0.9rem;
+      }
+
+      .dashboard-menu {
+        min-width: 160px;
+        padding: 8px;
+      }
+
+      .dashboard-dropdown-item {
+        padding: 10px 12px;
+        font-size: 0.8rem;
+        gap: 6px;
+      }
+      
+      .hero-metrics {
+        grid-template-columns: 1fr;
+        gap: 10px;
+        margin-top: 10px;
+      }
+      
+      .hero-metric-card {
+        padding: 12px;
+        border-radius: 12px;
+      }
+      
+      .hero-metric-label {
+        font-size: 0.65rem;
+        margin-bottom: 4px;
+      }
+      
+      .hero-metric-value {
+        font-size: 1rem;
+        line-height: 1.1;
+      }
+      
+      .hero-metric-note {
+        font-size: 0.7rem;
+        margin-top: 4px;
+      }
+
+      .about-page {
+        padding: 12px;
+        margin-bottom: 16px;
+        border-radius: 12px;
+      }
+
+      .about-hero {
+        gap: 16px;
+      }
+
+      .about-header {
+        gap: 8px;
+      }
+
+      .about-header h2 {
+        font-size: clamp(1rem, 3.5vw, 1.4rem);
+        margin-bottom: 8px;
+      }
+
+      .about-intro {
+        font-size: 0.9rem;
+        line-height: 1.5;
+      }
+
+      .about-slider {
+        min-height: 240px;
+        max-height: 45vh;
+        padding: 12px;
+        border-radius: 16px;
+      }
+
+      .about-slider-controls {
+        right: 12px;
+        bottom: 12px;
+      }
+
+      .about-slider-btn {
+        width: 38px;
+        height: 38px;
+      }
+
+      .about-slider-dots {
+        left: 12px;
+        bottom: 12px;
+      }
+
+      .about-description {
+        grid-template-columns: 1fr;
+        gap: 10px;
+      }
+
+      .about-card {
+        padding: 12px;
+        border-radius: 10px;
+      }
+
+      .about-card h3 {
+        font-size: 0.9rem;
+        margin-bottom: 6px;
+      }
+
+      .about-card p,
+      .about-card li,
+      .about-summary {
+        font-size: 0.85rem;
+      }
+
+      main {
+        padding: 0 12px;
+        margin: 12px auto;
+      }
+      
+      footer {
+        padding: 12px;
+        font-size: 0.75rem;
+      }
+    }
+
+    @media (max-width: 480px) {
+      header {
+        padding: 10px 12px;
+      }
+
+      .logo {
+        height: 36px;
+        width: 36px;
+        padding: 6px;
+      }
+
+      .header-title {
+        font-size: 0.85rem;
+      }
+
+      .dashboard-hero {
+        padding: 14px 10px;
+        gap: 12px;
+      }
+
+      .hero-title {
+        font-size: clamp(1rem, 4vw, 1.8rem);
+        margin-bottom: 6px;
+      }
+      
+      .hero-copy {
+        font-size: 0.8rem;
+        margin-bottom: 10px;
+      }
+      
+      .hero-buttons {
+        gap: 8px;
+        margin-bottom: 10px;
+      }
+      
+      .dashboard-action-btn {
+        padding: 10px 12px;
+        font-size: 0.75rem;
+        min-width: auto;
+        flex: 1 1 calc(50% - 2px);
+      }
+
+      .dashboard-action-btn i {
+        font-size: 0.85rem;
+        margin-right: 2px;
+      }
+
+      .dashboard-menu-wrapper {
+        flex: 1 1 100%;
+      }
+      
+      .hero-metrics {
+        gap: 8px;
+      }
+      
+      .hero-metric-card {
+        padding: 10px;
+      }
+      
+      .hero-metric-value {
+        font-size: 0.95rem;
+      }
+
+      .about-page {
+        padding: 10px;
+      }
+
+      .about-slider {
+        min-height: 200px;
+        max-height: 40vh;
+        padding: 10px;
+      }
+
+      .about-header h2 {
+        font-size: clamp(0.95rem, 3vw, 1.3rem);
+        margin-bottom: 6px;
+      }
+
+      .about-intro {
+        font-size: 0.85rem;
+      }
+
+      main {
+        padding: 0 10px;
+        margin: 10px auto;
+      }
+    }
+
+    @media (max-width: 390px) {
+      header {
+        padding: 8px 10px;
+      }
+
+      .logo {
+        height: 32px;
+        width: 32px;
+      }
+
+      .header-title {
+        font-size: 0.8rem;
+      }
+
+      .header-brand {
+        gap: 10px;
+      }
+
+      .dashboard-hero {
+        padding: 12px 8px;
+      }
+
+      .hero-title {
+        font-size: clamp(0.95rem, 3.5vw, 1.6rem);
+      }
+      
+      .hero-copy {
+        font-size: 0.78rem;
+      }
+      
+      .dashboard-action-btn {
+        flex: 1 1 calc(50% - 2px);
+        padding: 10px 12px;
+        font-size: 0.72rem;
+      }
+
+      .hero-metric-card {
+        padding: 8px;
+      }
+
+      .hero-metric-label {
+        font-size: 0.6rem;
+      }
+
+      .hero-metric-value {
+        font-size: 0.9rem;
+      }
+
+      main {
+        padding: 0 8px;
+      }
+    }
+
+    @media (max-width: 360px) {
+      header {
+        padding: 6px 8px;
+      }
+
+      .logo {
+        height: 28px;
+        width: 28px;
+        padding: 4px;
+      }
+
+      .header-title {
+        font-size: 0.75rem;
+      }
+
+      .header-menu {
+        gap: 4px;
+      }
+
+      .nav-item {
+        padding: 4px 8px;
+        font-size: 0.7rem;
+      }
+
+      .dashboard-hero {
+        padding: 10px 6px;
+        gap: 8px;
+      }
+
+      .hero-title {
+        font-size: clamp(0.9rem, 3vw, 1.4rem);
+        margin-bottom: 4px;
+      }
+      
+      .hero-copy {
+        font-size: 0.75rem;
+        margin-bottom: 8px;
+      }
+      
+      .hero-buttons {
+        gap: 6px;
+        margin-bottom: 8px;
+      }
+      
+      .dashboard-action-btn {
+        flex: 1 1 calc(50% - 1.5px);
+        padding: 10px 12px;
+        font-size: 0.68rem;
+      }
+
+      .dashboard-action-btn i {
+        font-size: 0.8rem;
+      }
+
+      .hero-metrics {
+        gap: 6px;
+      }
+
+      .hero-metric-card {
+        padding: 6px;
+        border-radius: 8px;
+      }
+
+      .hero-metric-label {
+        font-size: 0.55rem;
+        margin-bottom: 2px;
+      }
+
+      .hero-metric-value {
+        font-size: 0.85rem;
+      }
+
+      .hero-metric-note {
+        font-size: 0.65rem;
+        margin-top: 2px;
+      }
+
+      main {
+        padding: 0 6px;
+        margin: 8px auto;
+      }
+
+      footer {
+        padding: 8px;
+        font-size: 0.7rem;
       }
     }
   </style>

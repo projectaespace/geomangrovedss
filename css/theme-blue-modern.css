@@ -286,6 +286,33 @@ select {
   to { transform: rotate(360deg); }
 }
 
+/* ===== MOBILE BODY FIXES ===== */
+@media (max-width: 768px) {
+  body {
+    overflow-x: hidden;
+    width: 100vw;
+    max-width: 100%;
+  }
+  
+  main {
+    overflow-x: hidden;
+    width: 100%;
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  html, body {
+    overflow-x: hidden;
+    width: 100%;
+    max-width: 100%;
+  }
+  
+  * {
+    max-width: 100%;
+  }
+}
+
 /* ================================================================
    RESPONSIVE IMPROVEMENTS
    ================================================================ */

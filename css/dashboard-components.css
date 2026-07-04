@@ -346,6 +346,16 @@
   .karbon-table {
     min-width: 100%;
   }
+  
+  .zona-summary-table-wrapper {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scroll-behavior: smooth;
+  }
+  
+  .karbon-table {
+    overflow: visible;
+  }
 }
 
 .filter-select option {
@@ -1134,5 +1144,421 @@ canvas {
   .zone-dashboard,
   .carbon-dashboard {
     padding: 12px;
+  }
+  
+  .stock-exchange-panel {
+    margin-top: 16px;
+    padding: 14px 16px;
+    border-radius: 12px;
+  }
+  
+  .ticker-header {
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+  }
+  
+  .ticker-chip {
+    padding: 8px 12px;
+    font-size: 0.8rem;
+  }
+  
+  .zona-callout {
+    padding: 14px 16px;
+    border-radius: 12px;
+    margin-bottom: 16px;
+  }
+  
+  .zona-note {
+    font-size: 0.9rem;
+  }
+  
+  .zona-summary-panel {
+    padding: 16px;
+    border-radius: 16px;
+  }
+  
+  .zona-summary-head {
+    gap: 10px;
+    margin-bottom: 14px;
+  }
+  
+  .zona-badge {
+    width: 40px;
+    height: 40px;
+    font-size: 1.1rem;
+  }
+  
+  .zona-summary-table th,
+  .zona-summary-table td {
+    padding: 10px 12px;
+    font-size: 0.85rem;
+  }
+  
+  .karbon-summary-cards {
+    grid-template-columns: 1fr;
+    gap: 12px;
+    margin-top: 16px;
+  }
+  
+  .karbon-summary-card {
+    padding: 16px;
+    border-radius: 14px;
+  }
+  
+  .karbon-summary-card h4 {
+    font-size: 0.95rem;
+    margin-bottom: 6px;
+  }
+  
+  .karbon-summary-card p {
+    font-size: 0.82rem;
+  }
+  
+  .filter-group {
+    margin-bottom: 12px;
+  }
+  
+  .filter-label {
+    font-size: 0.7rem;
+    margin-bottom: 4px;
+  }
+  
+  .filter-select {
+    padding: 8px 10px;
+    font-size: 0.85rem;
+    border-radius: 6px;
+  }
+  
+  .year-btn {
+    padding: 8px 10px;
+    font-size: 0.8rem;
+  }
+  
+  .panel-tab {
+    padding: 10px 8px;
+    font-size: 0.8rem;
+  }
+  
+  .chart-container {
+    padding: 12px;
+    margin-bottom: 12px;
+    border-radius: 8px;
+  }
+  
+  .chart-title {
+    font-size: 0.8rem;
+    margin-bottom: 10px;
+  }
+  
+  .stat-row {
+    padding: 10px;
+    margin-bottom: 8px;
+    border-radius: 6px;
+  }
+  
+  .stat-label {
+    font-size: 0.8rem;
+  }
+  
+  .stat-value {
+    font-size: 0.9rem;
+  }
+  
+  .metric-row {
+    gap: 8px;
+    margin-bottom: 10px;
+  }
+  
+  .metric {
+    padding: 10px;
+    border-radius: 6px;
+  }
+  
+  .metric-label {
+    font-size: 0.65rem;
+    margin-bottom: 2px;
+  }
+  
+  .metric-value {
+    font-size: 1.1rem;
+  }
+  
+  .metric-unit {
+    font-size: 0.65rem;
+  }
+  
+  .card-header {
+    padding: 12px;
+  }
+  
+  .card-content {
+    padding: 12px;
+  }
+}
+
+@media (max-width: 600px) {
+  .stock-exchange-panel {
+    margin-top: 12px;
+    padding: 12px 14px;
+  }
+  
+  .ticker-header {
+    font-size: 0.85rem;
+    margin-bottom: 8px;
+  }
+  
+  .ticker-row {
+    gap: 8px;
+  }
+  
+  .ticker-chip {
+    padding: 6px 10px;
+    font-size: 0.75rem;
+  }
+  
+  .zona-callout {
+    padding: 12px 14px;
+    margin-bottom: 12px;
+  }
+  
+  .zona-note {
+    font-size: 0.85rem;
+    line-height: 1.5;
+  }
+  
+  .zona-summary-panel {
+    padding: 14px;
+    border-radius: 12px;
+  }
+  
+  .zona-summary-head {
+    gap: 8px;
+    margin-bottom: 12px;
+  }
+  
+  .zona-badge {
+    width: 36px;
+    height: 36px;
+    font-size: 1rem;
+  }
+  
+  .zona-summary-table {
+    border-spacing: 0 8px;
+  }
+  
+  .zona-summary-table th,
+  .zona-summary-table td {
+    padding: 8px 10px;
+    font-size: 0.8rem;
+  }
+  
+  .karbon-summary-cards {
+    margin-top: 12px;
+    gap: 10px;
+  }
+  
+  .karbon-summary-card {
+    padding: 12px;
+  }
+  
+  .karbon-summary-card h4 {
+    font-size: 0.9rem;
+  }
+  
+  .karbon-summary-card p {
+    font-size: 0.8rem;
+  }
+  
+  .filter-select {
+    padding: 6px 8px;
+    font-size: 0.8rem;
+  }
+  
+  .year-btn {
+    padding: 6px 8px;
+    font-size: 0.75rem;
+  }
+  
+  .panel-tab {
+    padding: 8px 6px;
+    font-size: 0.75rem;
+  }
+  
+  .chart-container {
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .chart-title {
+    font-size: 0.75rem;
+    margin-bottom: 8px;
+  }
+  
+  .stat-row {
+    padding: 8px;
+    margin-bottom: 6px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .stat-label {
+    font-size: 0.75rem;
+    margin-bottom: 2px;
+  }
+  
+  .stat-value {
+    font-size: 0.85rem;
+    text-align: left;
+  }
+  
+  .metric-row {
+    grid-template-columns: 1fr;
+    gap: 6px;
+    margin-bottom: 8px;
+  }
+  
+  .metric {
+    padding: 8px;
+  }
+  
+  .metric-label {
+    font-size: 0.6rem;
+  }
+  
+  .metric-value {
+    font-size: 1rem;
+  }
+  
+  .card-header {
+    padding: 10px;
+  }
+  
+  .card-content {
+    padding: 10px;
+  }
+  
+  .grid-3 {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .kpi-card {
+    flex-direction: column;
+    padding: 6px;
+    gap: 6px;
+  }
+  
+  .kpi-icon {
+    width: 32px;
+    height: 32px;
+    font-size: 14px;
+  }
+  
+  .kpi-value {
+    font-size: 0.9rem;
+  }
+  
+  .kpi-label {
+    font-size: 0.6rem;
+  }
+  
+  .kpi-unit {
+    font-size: 0.65rem;
+  }
+  
+  .stock-exchange-panel {
+    padding: 10px 12px;
+  }
+  
+  .ticker-header {
+    font-size: 0.8rem;
+    margin-bottom: 6px;
+  }
+  
+  .ticker-chip {
+    padding: 5px 8px;
+    font-size: 0.7rem;
+  }
+  
+  .zona-callout {
+    padding: 10px 12px;
+    margin-bottom: 10px;
+  }
+  
+  .zona-summary-panel {
+    padding: 12px;
+  }
+  
+  .zona-summary-table th,
+  .zona-summary-table td {
+    padding: 6px 8px;
+    font-size: 0.75rem;
+  }
+  
+  .karbon-summary-card {
+    padding: 10px;
+  }
+  
+  .filter-select {
+    padding: 5px 6px;
+    font-size: 0.75rem;
+  }
+  
+  .chart-container {
+    padding: 8px;
+    margin-bottom: 8px;
+  }
+  
+  .chart-title {
+    font-size: 0.7rem;
+  }
+  
+  .year-btn {
+    padding: 5px 6px;
+    font-size: 0.7rem;
+  }
+}
+
+@media (max-width: 390px) {
+  .kpi-card {
+    padding: 4px;
+  }
+  
+  .kpi-icon {
+    width: 28px;
+    height: 28px;
+    font-size: 12px;
+  }
+  
+  .filter-select {
+    font-size: 0.7rem;
+  }
+  
+  .zona-summary-table th,
+  .zona-summary-table td {
+    padding: 5px 6px;
+    font-size: 0.7rem;
+  }
+}
+
+@media (max-width: 360px) {
+  .stock-exchange-panel {
+    margin-top: 8px;
+    padding: 8px 10px;
+  }
+  
+  .ticker-chip {
+    padding: 4px 6px;
+    font-size: 0.65rem;
+  }
+  
+  .zona-callout {
+    padding: 8px 10px;
+  }
+  
+  .filter-select {
+    padding: 4px 5px;
+    font-size: 0.65rem;
   }
 }

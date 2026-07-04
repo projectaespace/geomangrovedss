@@ -531,29 +531,388 @@ body {
   .slide-grid {
     grid-template-columns: 1fr;
   }
-}
-
-@media (max-width: 768px) {
-  .story-slide {
-    padding: 1.8rem 1.2rem;
+  
+  .slide-copy {
+    gap: 1.2rem;
   }
-
-  .slide-copy h1 {
-    font-size: 2.8rem;
-  }
-
+  
   .slide-card {
     min-height: auto;
   }
 }
 
-@media (max-width: 560px) {
-  .slide-copy h1 {
-    font-size: 2.25rem;
+@media (max-width: 768px) {
+  .story-slide {
+    padding: 1.5rem 1rem;
+    min-height: auto;
   }
 
-  .slide-actions,
+  .slide-copy h1 {
+    font-size: clamp(2rem, 5vw, 2.8rem);
+  }
+  
+  .slide-copy p {
+    font-size: 0.95rem;
+    line-height: 1.7;
+  }
+
+  .slide-card {
+    padding: 1.5rem;
+    min-height: auto;
+    gap: 1.2rem;
+    border-radius: 20px;
+  }
+  
+  .card-head h2 {
+    font-size: 1.6rem;
+    line-height: 1.1;
+    margin: 0;
+  }
+  
   .info-list {
-    gap: 0.85rem;
+    gap: 0.8rem;
+  }
+  
+  .info-item {
+    padding: 0.8rem;
+    gap: 0.8rem;
+    border-radius: 14px;
+  }
+  
+  .info-item span {
+    font-size: 0.85rem;
+  }
+  
+  .info-item strong {
+    font-size: 0.9rem;
+  }
+  
+  .slide-actions {
+    gap: 0.8rem;
+  }
+  
+  .btn {
+    min-height: 44px;
+    padding: 0 1.2rem;
+    font-size: 0.9rem;
+  }
+  
+  .gallery-slider-container {
+    gap: 0.5rem;
+  }
+  
+  .gallery-slider {
+    min-height: 220px;
+    padding: 0.8rem;
+    border-radius: 20px;
+  }
+  
+  .gallery-item {
+    flex: 0 0 280px;
+    min-height: 200px;
+    border-radius: 20px;
+  }
+  
+  .gallery-nav {
+    width: 40px;
+    height: 40px;
+    font-size: 1.4rem;
+  }
+  
+  .map-preview {
+    min-height: 240px;
+    border-radius: 20px;
+  }
+  
+  .map-modal-card {
+    top: 2vh;
+    width: min(90vw, 500px);
+    max-height: 85vh;
+    padding: 1rem;
+    border-radius: 20px;
+  }
+  
+  .map-modal-image {
+    max-height: calc(85vh - 180px);
+  }
+  
+  .fixed-home-button {
+    right: 1rem;
+    bottom: 1rem;
+    padding: 0.8rem 1rem;
+    font-size: 0.9rem;
+    border-radius: 999px;
+  }
+}
+
+@media (max-width: 600px) {
+  .story-slide {
+    padding: 1.2rem 0.8rem;
+  }
+
+  .slide-copy h1 {
+    font-size: clamp(1.6rem, 4.5vw, 2.4rem);
+    margin: 0;
+  }
+  
+  .slide-copy p {
+    font-size: 0.9rem;
+    margin: 0;
+  }
+
+  .slide-card {
+    padding: 1.2rem;
+    gap: 1rem;
+  }
+  
+  .card-head span {
+    font-size: 0.8rem;
+    margin-bottom: 0.6rem;
+  }
+  
+  .card-head h2 {
+    font-size: 1.4rem;
+    margin: 0;
+  }
+  
+  .info-item {
+    padding: 0.6rem;
+    border-radius: 12px;
+    grid-template-columns: 1fr;
+  }
+  
+  .info-item span,
+  .info-item strong {
+    text-align: left;
+  }
+  
+  .gallery-item {
+    flex: 0 0 240px;
+    min-height: 180px;
+  }
+  
+  .gallery-nav {
+    width: 36px;
+    height: 36px;
+    font-size: 1.2rem;
+  }
+  
+  .map-preview {
+    min-height: 200px;
+  }
+  
+  .map-preview-label {
+    font-size: 0.8rem;
+    margin-bottom: 0.6rem;
+  }
+  
+  .map-modal-card {
+    width: 90vw;
+    padding: 0.8rem;
+  }
+  
+  .map-modal-close {
+    width: 36px;
+    height: 36px;
+    font-size: 20px;
+  }
+  
+  .map-modal-title {
+    font-size: 1.2rem;
+    margin-bottom: 0.8rem;
+  }
+  
+  .map-modal-link {
+    padding: 0.8rem 1rem;
+    font-size: 0.85rem;
+  }
+  
+  .fixed-home-button {
+    padding: 0.7rem 0.9rem;
+    font-size: 0.85rem;
+    gap: 0.7rem;
+  }
+  
+  .fixed-home-button i {
+    font-size: 0.9rem;
+  }
+  
+  .eyebrow {
+    gap: 0.5rem;
+    font-size: 0.8rem;
+  }
+  
+  .slide-actions {
+    gap: 0.6rem;
+  }
+  
+  .btn {
+    min-height: 40px;
+    padding: 0 1rem;
+    font-size: 0.85rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .story-slide {
+    padding: 1rem 0.6rem;
+    min-height: auto;
+  }
+
+  .slide-copy h1 {
+    font-size: clamp(1.3rem, 4vw, 2rem);
+  }
+  
+  .slide-copy p {
+    font-size: 0.85rem;
+    line-height: 1.6;
+  }
+
+  .slide-card {
+    padding: 1rem;
+    gap: 0.9rem;
+    border-radius: 16px;
+  }
+  
+  .card-head h2 {
+    font-size: 1.2rem;
+  }
+  
+  .info-list {
+    gap: 0.6rem;
+  }
+  
+  .info-item {
+    padding: 0.5rem;
+    border-radius: 10px;
+    font-size: 0.8rem;
+  }
+  
+  .info-item span {
+    font-size: 0.8rem;
+  }
+  
+  .info-item strong {
+    font-size: 0.85rem;
+  }
+  
+  .gallery-slider {
+    min-height: 200px;
+    padding: 0.6rem;
+  }
+  
+  .gallery-item {
+    flex: 0 0 200px;
+    min-height: 160px;
+    border-radius: 16px;
+  }
+  
+  .gallery-nav {
+    width: 32px;
+    height: 32px;
+    font-size: 1rem;
+  }
+  
+  .map-preview {
+    min-height: 180px;
+    border-radius: 16px;
+  }
+  
+  .map-modal-card {
+    width: min(95vw, 450px);
+    max-height: 80vh;
+    padding: 0.6rem;
+  }
+  
+  .map-modal-image {
+    max-height: calc(80vh - 160px);
+  }
+  
+  .map-modal-close {
+    width: 32px;
+    height: 32px;
+    font-size: 18px;
+  }
+  
+  .fixed-home-button {
+    right: 0.8rem;
+    bottom: 0.8rem;
+    padding: 0.6rem 0.8rem;
+    font-size: 0.8rem;
+  }
+  
+  .btn {
+    min-height: 36px;
+    padding: 0 0.9rem;
+    font-size: 0.8rem;
+  }
+  
+  .slide-actions {
+    gap: 0.5rem;
+  }
+}
+
+@media (max-width: 390px) {
+  .story-slide {
+    padding: 0.9rem 0.5rem;
+  }
+
+  .slide-copy h1 {
+    font-size: clamp(1.1rem, 3.5vw, 1.8rem);
+  }
+  
+  .slide-copy p {
+    font-size: 0.8rem;
+  }
+
+  .slide-card {
+    padding: 0.9rem;
+  }
+  
+  .card-head h2 {
+    font-size: 1.1rem;
+  }
+  
+  .info-item {
+    padding: 0.4rem;
+  }
+  
+  .gallery-item {
+    flex: 0 0 180px;
+  }
+  
+  .gallery-nav {
+    width: 28px;
+    height: 28px;
+    font-size: 0.9rem;
+  }
+  
+  .map-preview {
+    min-height: 160px;
+  }
+  
+  .fixed-home-button {
+    padding: 0.5rem 0.6rem;
+    font-size: 0.75rem;
+  }
+  
+  .btn {
+    min-height: 34px;
+    padding: 0 0.8rem;
+    font-size: 0.75rem;
+  }
+}
+
+@media (max-width: 360px) {
+  html, body {
+    overflow-x: hidden;
+    width: 100%;
+    max-width: 100%;
+  }
+  
+  .story-container {
+    overflow-x: hidden;
+    width: 100%;
+    max-width: 100%;
   }
 }
